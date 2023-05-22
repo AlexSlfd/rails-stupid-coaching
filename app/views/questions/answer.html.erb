@@ -1,0 +1,14 @@
+<%= link_to('ask', ask_path) %>
+
+<h1 class="m-3">Stupid Coaching</h1>
+<div class="block">
+  <%= params["question"] %>
+  <p>-<em>You</em></p>
+</div>
+
+<div id="answer">
+  <%= @answer %>
+  <p>-<em>Your coach</em></p>
+</div>
+
+<a href="/ask" class="m-3">Ask a new question</a>
